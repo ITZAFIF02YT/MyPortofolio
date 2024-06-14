@@ -10,13 +10,6 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "QbSMK6v2n16FcuGJT",
-      });
-   })();
-</script>
 <script src="script.js"></script>
 
 </head>
@@ -123,27 +116,20 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-6">
-          <form>
+          <form id="contactForm">
             <div class="mb-3">
               <label for="Nama" class="form-label">Nama lengkap</label>
-              <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+              <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" aria-describedby="email">
+              <label for="phone" class="form-label">Nomor WhatsApp</label>
+              <input type="tel" class="form-control" id="phone" aria-describedby="PhoneHelp">
             </div>
             <div class="mb-3">
   <label for="pesan" class="form-label">Pesan</label>
-  <textarea class="form-control" id="pesan" rows="3"></textarea>
+  <textarea class="form-control" id="message" rows="3"></textarea>
 </div>
-            <button type="submit" onclick="sendMail()" class="btn btn-outline-primary">Kirim</button>
-
-             <script>
-   function onSubmit(token) {
-     document.getElementById("demo-form").submit();
-   }
- </script>
-
+            <button type="submit" class="btn btn-outline-primary">Kirim</button>
           </form>
         </div>
       </div>
@@ -157,8 +143,5 @@
   <p>Created With <i class="bi bi-heart-fill text-danger"></i> by <a href="" class="text-white fw-bold">ITZ_AFIF02YT</a></p>
 </footer>
 <!-- akhir footer -->
-    <script src="bootstrap-5.2.3-dist/js/bootstrap.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-
 </body>
 </html>
