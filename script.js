@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const message = document.getElementById('message').value;
   
       // Nomor WhatsApp tujuan
-      const waNumber = '6282392891122'; // Ganti dengan nomor WhatsApp tujuan, dalam format internasional tanpa tanda +
+      const waNumber = '6282392891122'; // format internasional tanpa tanda +
       
       // Format pesan
       const waMessage = `Halo, nama saya ${name}. Nomor WhatsApp saya adalah ${phone}. Pesan: ${message}`;
