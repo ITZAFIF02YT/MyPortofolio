@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const waNumber = '6282392891122'; // format internasional tanpa tanda +
       
       // Format pesan
-      const waMessage = `Halo, nama saya ${name}. Nomor WhatsApp saya adalah ${phone}. Pesan: ${message}`;
+      const waMessage = `Halo, nama saya ${name}. Nomor telepon saya adalah ${phone}. Pesan: ${message}`;
   
       // Membuka aplikasi WhatsApp dengan pesan terformat
       const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(waMessage)}`;
